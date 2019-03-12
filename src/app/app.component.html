@@ -1,20 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-<h1 class='center'>Pokémons</h1>
-<div class='container'>
-  <div class="row">
-    <div *ngFor='let pokemon of pokemons' class="col s6 m4">
-      <div class="card horizontal" (click)="selectPokemon(pokemon)" pkmnBorderCard="gray">
-        <div class="card-image">
-          <img [src]="pokemon.picture">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>{{ pokemon.name }}</p>
-            <p class="hide-on-med-and-down"><small>{{ pokemon.created }}</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<nav>
+  <div class="nav-wrapper teal">
+    <a href='#' class="brand-logo center">pokemon-app</a>
   </div>
-</div>
+</nav>
+<router-outlet></router-outlet>
