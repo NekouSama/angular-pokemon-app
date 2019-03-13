@@ -22,7 +22,7 @@ export class ListPokemonComponent {
     }
 
     selectPokemon(pokemon: Pokemon) {
-        let link = ['/pokemon', pokemon.id]
+        let link = ['/pokemons', pokemon.id]
         this.router.navigate(link);
     }
 }

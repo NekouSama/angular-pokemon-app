@@ -30,11 +30,11 @@ export class DetailPokemonComponent implements OnInit {
     }
 
     goBack(): void {
-        this.router.navigate(['/pokemons']);
+        this.router.navigate(['/pokemons/all']);
     }
 
     goEdit(pokemon: Pokemon): void {
-        let link = ['/pokemon/edit', pokemon.id];
+        let link = ['/pokemons/edit', pokemon.id];
         this.router.navigate(link);
     }
 }
