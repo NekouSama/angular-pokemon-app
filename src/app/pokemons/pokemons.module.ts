@@ -10,6 +10,8 @@ import { PokemonTypeColorPipe } from './pokemon-type-color';
 import { PokemonsService } from './pokemons.service';
 import { PokemonFormComponent } from './pokemon-form.component';
 import { EditPokemonComponent } from './edit-pokemon.component';
+import { PokemonSearchComponent } from './search-pokemon.component';
+import { LoaderComponent } from '../loader.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { EditPokemonComponent } from './edit-pokemon.component';
         PokemonFormComponent,
         EditPokemonComponent,
         BorderCardDirective,
-        PokemonTypeColorPipe
+        PokemonTypeColorPipe,
+        PokemonSearchComponent,
+        LoaderComponent
     ],
     providers: [PokemonsService]
 })
